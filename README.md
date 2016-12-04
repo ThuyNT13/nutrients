@@ -1,24 +1,15 @@
-# README
+# nutrients
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple app, utilizing the [USDA API](https://ndb.nal.usda.gov/ndb/api/doc) database.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* Test Suite
 
 * Deployment instructions
 
-* ...
+## Support
+
+Please open [an issue](https://github.com/ThuyNT13/nutrients/issues) for support.
+
+## Contributing
+
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and open a [pull request](https://github.com/ThuyNT13/nutrients/pulls).
