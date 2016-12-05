@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
 
-  resources :users
+  resources :users, except: :index
 
   root 'home#index'
 
