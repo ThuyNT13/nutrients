@@ -5,7 +5,7 @@ Simple app, utilizing the [USDA API](https://ndb.nal.usda.gov/ndb/api/doc) datab
 * User Authentication utilizing BCrypt
 
 * Test Suites
-  - [Rspec-Rails](https://github.com/rspec/rspec-rails)(remember to run `rails generate rspec:install`) and [documentation](https://www.relishapp.com/rspec/rspec-rails/docs)
+  - [Rspec-Rails](https://github.com/rspec/rspec-rails)
   - Cucumber? (for controllers)
 
 * Deployment to Heroku
