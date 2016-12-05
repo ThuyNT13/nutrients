@@ -11,10 +11,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Welcome!"
       redirect_to @user
     else
-      flash[:alert] = "There was a problem creating your account. Please try again."
+      flash[:alert] = "Your submission was invalid"
       render :new
     end
   end
@@ -32,7 +31,6 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    # or where?
     redirect_to "home#index"
   end
 

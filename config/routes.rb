@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'home/index'
 
-  resources :users
+  resources :users, except: :index
+
+  resources :sessions, only: [:new, :create, :destroy]
 
   root 'home#index'
 
