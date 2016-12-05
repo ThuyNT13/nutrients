@@ -1,14 +1,17 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
+  # refactor?
+
+  def logged_in?
+    session[:current_user_id] != nil
+  end
+
   private
 
-  def set_user
-    if current_user
-      @user ||= current_user
-    else
-      redirect_to new_user_path
-    end
+  def current_user
+    @_current_user ||= session[:current_user_id] &&
+      User.find_by(id: session[:current_user_id])
   end
 
 end
