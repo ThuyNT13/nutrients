@@ -7,6 +7,9 @@ Simple app, utilizing the [USDA API](https://ndb.nal.usda.gov/ndb/api/doc) datab
 * Test Suites
   - [Rspec-Rails](https://github.com/rspec/rspec-rails)
   - Cucumber? (for controllers)
+  
+* Project Management utilising GitHub's new [Project](https://help.github.com/articles/tracking-the-progress-of-your-work-with-projects/) feature
+  - [MVP phase 1](https://github.com/ThuyNT13/nutrients/projects/1)
 
 * Deployment to Heroku
 
