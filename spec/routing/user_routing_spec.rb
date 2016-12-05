@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "User routing", type: :routing do
 
   it "routes GET /users/1 to profile" do
-    expect(:get => "/users/1").to route_to("users#show", :user_id => "1")
+    expect(:get => "/users/1").to route_to("users#show", :id => "1")
   end
   it "routes GET /users/new to users#new" do
     expect(:get => "/users/new").to route_to("users#new")
