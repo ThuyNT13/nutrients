@@ -35,7 +35,7 @@ $ rails new app_name -d postgresql
 $ heroku version
 ```
 
-Now login to Heroku and add your [SSH key](https://devcenter.heroku.com/articles/keys). 
+To initialize the process, login to Heroku and add your [SSH key](https://devcenter.heroku.com/articles/keys). 
 
 ```bash
 $ heroku login
@@ -61,6 +61,14 @@ But not quite, because if you have a database, you need to migrate the productio
 ```bash
 $ heroku run rails db:migrate
 ```
+
+Run logs to diagnose problems"
+
+```bash
+$ heroku logs
+```
+
+More info about deploying to Heroku [here](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment).
 
 ## [Security](http://guides.rubyonrails.org/security.html#logging)
 At the moment, utilising BCrypt for authentication.
