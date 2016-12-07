@@ -2,17 +2,59 @@
 
 Simple app, utilizing the [USDA API](https://ndb.nal.usda.gov/ndb/api/doc) database.
 
-* User Authentication utilizing BCrypt
-
-* Test Suites
+## Test Suites
   - [Rspec-Rails](https://github.com/rspec/rspec-rails)
   - [Travis](https://docs.travis-ci.com/user/getting-started/)? for continuous integration
   - Cucumber? (for controllers)
   
-* Project Management utilising GitHub's new [Project](https://help.github.com/articles/tracking-the-progress-of-your-work-with-projects/) feature
+## Project Management 
+Utilising GitHub's new [Project](https://help.github.com/articles/tracking-the-progress-of-your-work-with-projects/) feature
   - [MVP phase 1](https://github.com/ThuyNT13/nutrients/projects/1)
 
-* Deployment to Heroku
+## Deployment to Heroku
+
+Heroku uses PostgreSQL so be sure to at least have it loaded up in production in your Gemfile. Rails defaults to SQLite but Heroku doesn't support SQLite.
+
+```Ruby
+group :production do
+  gem 'pg', '0.18.4'
+end
+```
+
+And when you are ready to bundle install, run `bundle install --without production` instead, to avoid installing unneccessary production gems.
+
+Or setup PostgreSQL as your database when you create your app from the beginning. 
+
+```bash
+$ rails new app_name -d postgresql
+```
+
+[Sign-up for Heroku](https://signup.heroku.com), if you haven't already. Make sure that Heroku CLI (command-line interface) is installed by running the code below iin your terminal. If not, install it from [here](https://devcenter.heroku.com/articles/heroku-cli).
+
+```bash
+$ heroku version
+```
+
+Now login to Heroku and add your [SSH key](https://devcenter.heroku.com/articles/keys). 
+
+```bash
+$ heroku login
+$ heroku keys:add
+```
+
+Inside the directory of your repo, run the following command to create a place in Heroku for your app:
+
+```bash
+$ heroku create
+```
+
+Now you should be ready to deploy to Heroku so: 
+
+```bash
+$ git push heroku master
+```
+
+And you should now be officially deployed to Heroku.
 
 * Focus on [Security](http://guides.rubyonrails.org/security.html#logging)
 
