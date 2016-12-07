@@ -29,7 +29,7 @@ Or setup PostgreSQL as your database when you create your app from the beginning
 $ rails new app_name -d postgresql
 ```
 
-[Sign-up for Heroku](https://signup.heroku.com), if you haven't already. Make sure that Heroku CLI (command-line interface) is installed by running the code below iin your terminal. If not, install it from [here](https://devcenter.heroku.com/articles/heroku-cli).
+[Sign-up for Heroku](https://signup.heroku.com), if you haven't already. Make sure that Heroku CLI (command-line interface) is installed by running the code below in your terminal. If not, install it from [here](https://devcenter.heroku.com/articles/heroku-cli).
 
 ```bash
 $ heroku version
@@ -54,9 +54,10 @@ Now you should be ready to deploy to Heroku so:
 $ git push heroku master
 ```
 
-And you should now be officially deployed to Heroku.
+Congratulations! You are officially deployed to Heroku.
 
-* Focus on [Security](http://guides.rubyonrails.org/security.html#logging)
+## [Security](http://guides.rubyonrails.org/security.html#logging)
+At the moment, utilising BCrypt for authentication.
 
 ## Support
 
