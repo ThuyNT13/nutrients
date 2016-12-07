@@ -68,6 +68,12 @@ Run logs to diagnose problems"
 $ heroku logs
 ```
 
+Rename app from default Heroku name:
+
+```bash
+ heroku apps:rename new_name
+```
+
 More info about deploying to Heroku [here](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment).
 
 ## [Security](http://guides.rubyonrails.org/security.html#logging)
