@@ -56,6 +56,12 @@ $ git push heroku master
 
 Congratulations! You are officially deployed to Heroku.
 
+But not quite, because if you have a database, you need to migrate the production database up to Heroku, like so:
+
+```bash
+$ heroku run rails db:migrate
+```
+
 ## [Security](http://guides.rubyonrails.org/security.html#logging)
 At the moment, utilising BCrypt for authentication.
 
