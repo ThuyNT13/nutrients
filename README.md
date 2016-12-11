@@ -62,6 +62,15 @@ But not quite, because if you have a database, you need to migrate the productio
 $ heroku run rails db:migrate
 ```
 
+and if you're using Heroku to test your development and want to push up data to replace data already there: 
+
+```bash
+$ heroku pg:reset DATABASE
+$ heroku run rails db:migrate
+$ heroku run rails db:seed
+$ heroku restart
+```
+
 Run logs to diagnose problems"
 
 ```bash
@@ -71,7 +80,7 @@ $ heroku logs
 Rename app from default Heroku name:
 
 ```bash
- heroku apps:rename new_name
+ $ heroku apps:rename new_name
 ```
 
 More info about deploying to Heroku [here](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment).
